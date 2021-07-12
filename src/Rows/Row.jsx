@@ -1,9 +1,7 @@
 import './Row.css'
 import { useState, useEffect } from 'react'
 import { options, numberOperators, stringOperators } from '../utils/options'
-// import { FaTimes } from 'react-icons/fa'
 
-//Define row component
 const Row = ({
 	handleDeleteButton,
 	id,
