@@ -1,6 +1,6 @@
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import Row from './Rows/Row'
-import { useState, useEffect } from 'react'
 
 const App = () => {
 	const [rows, setRows] = useState([])
@@ -23,6 +23,7 @@ const App = () => {
 		)
 	}
 
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	useEffect(() => initializeRows(), [])
 
 	const initializeSqlStatements = () => {
